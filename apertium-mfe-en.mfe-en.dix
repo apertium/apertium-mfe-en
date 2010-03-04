@@ -32,9 +32,9 @@
    		
    		<e><p><l>dan<s n = "pr"/></l><r>in<s n = "pr"/></r></p></e>
      	<e><p><l>gro<s n = "adj"/></l><r>big<s n = "adj"/><s n = "sint"/></r></p></e>
-     	<e><p><l>enn<s n = "n"/></l><r>a<s n = "det"/><s n = "ind"/></r></p></e>
+     	<e><p><l>enn<s n = "det"/><s n="ind"/></l><r>a<s n = "det"/><s n = "ind"/></r></p></e>
      	<e><p><l>lisyen<s n="n"/></l><r>dog<s n="n"/></r></p><par n="ND"/></e>
-   		<e><p><l>Moris<s n="np"/><s n="top"/><s n="sg"/></l><r>Mauritius<s n="np"/></r></p></e>
+   		<e><p><l>Moris<s n="np"/><s n="top"/><s n="sg"/></l><r>Mauritius<s n="np"/><s n="top"/></r></p></e>
    		
    	</section>
 	

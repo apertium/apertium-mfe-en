@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
 	
-	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzž</alphabet>
+	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzžYy</alphabet>
 	
 	<sdefs>
-		<sdef n = "adj"/>
-     	<sdef n = "n" />
-	 	<sdef n = "pr" />
+		<sdef n="adj"/>
+     	<sdef n="n" />
+     	<sdef n="det" />
+     	<sdef n="ind" />
+	 	<sdef n="pr" />
 		<sdef n="top" c="Toponym"/>
 		<sdef n="np"/>
 		<sdef n="sg"/>
@@ -17,19 +19,15 @@
 		<pardef n="an__pr">
 			<e><p><l></l><r><s n="pr"/></r></p></e>
 		</pardef>
-		<!--
-		<pardef n ="lib__adj">\
-			<e><p><l></l> <r><s n = "adj"/></r></p></e>
+	  	<pardef n="enn__det"> 
+	  		<e><p><l></l><r><s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+	  	</pardef>
+		<pardef n ="gros__adj">
+			<e><p><l></l> <r><s n="adj"/></r></p></e>
 		</pardef>
-		
-		<pardef n ="lib__noun">
-			<e><p><l></l><r><s n = "n"/></r></p></e>
-		</pardef>
-
 	  	<pardef n="liv__n"> 
 	  		<e><p><l></l><r><s n="n"/></r></p></e>
 	  	</pardef>
-		-->
 		
 		<pardef n="Moris__np">
 			<e><p><l/><r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
@@ -37,17 +35,19 @@
 
 	</pardefs>
   
-   	<section id = "main" type = "standard">
+   	<section id="main" type="standard">
    		
-   		<e lm="dan"><i>dan</i><par n="an__pr"/></e>	
-   		<!--
+  		<e lm="dan"><i>dan</i><par n="an__pr"/></e>	
+
+   		<e lm="enn"><i>enn</i><par n="enn__det"/></e> 
+
      		<e lm="lisyen"><i>lisyen</i><par n="liv__n"/></e>
-   			<e lm ="enn"><i>enn</i><par n = "lib__noun"/></e>
-   			<e lm ="gro"><i>gro</i><par n = "lib__adj"/></e>
-   		-->
+
+
+   		<e lm="gro" r="LR"><p><l>gro</l><r>gros</r></p><par n="gros__adj"/></e> <!-- Accept 'gro' as 'gros' -->
+   		<e lm="gros"><i>gros</i><par n="gros__adj"/></e>
+
    		<e lm="Moris"><i>Moris</i><par n="Moris__np"/></e>
-   		
-	 
    </section>
   
 </dictionary>
