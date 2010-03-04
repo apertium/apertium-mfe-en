@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dictionary>
+	
+	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzž</alphabet>
+	
+	<sdefs>
+		<sdef n="alpha" c=""/> 
+		<sdef n="acr" c="Acronym"/> 
+		<sdef n="predet" c="Pre determiner"/> 
+		<sdef n="detnt" c="Neuter dererminer"/> 
+		<sdef n="top" c="Toponym"/> 
+		<sdef n="ant" c="Anthroponym"/> 
+		<sdef n="al" c="Alters"/> 
+		<sdef n="cog" c="Cognomen"/> 
+		<sdef n="atn" /> 
+		<sdef n="enc" /> 
+		<sdef n="pro" /> 
+		<sdef n="tn" /> 
+		<sdef n="n" /> 
+		<sdef n="np" /> 
+		<sdef n="adj" /> 
+		<sdef n="f" /> 
+		<sdef n="m" /> 
+		<sdef n="mf" /> 
+		<sdef n="sg" /> 
+		<sdef n="pl" /> 
+		<sdef n="adv" /> 
+		<sdef n="preadv" /> 
+		<sdef n="pr" /> 
+		<sdef n="prn" /> 
+		<sdef n="rel" /> 
+		<sdef n="nn" /> 
+		<sdef n="an" /> 
+		<sdef n="aa" /> 
+		<sdef n="ind" /> 
+		<sdef n="itg" /> 
+		<sdef n="det" /> 
+		<sdef n="dem" /> 
+		<sdef n="def" /> 
+		<sdef n="cnjcoo" /> 
+		<sdef n="cnjsub" /> 
+		<sdef n="cnjadv" /> 
+		<sdef n="nt" /> 
+		<sdef n="vbser" /> 
+		<sdef n="vbhaver" /> 
+		<sdef n="vblex" /> 
+		<sdef n="vbmod" /> 
+		<sdef n="inf" /> 
+		<sdef n="ger" /> 
+		<sdef n="pp" /> 
+		<sdef n="p1" /> 
+		<sdef n="p2" /> 
+		<sdef n="p3" /> 
+		<sdef n="pii" /> 
+		<sdef n="ifi" /> 
+		<sdef n="fti" /> 
+		<sdef n="cni" /> 
+		<sdef n="prs" /> 
+		<sdef n="pis" /> 
+		<sdef n="fts" /> 
+		<sdef n="imp" /> 
+		<sdef n="pos" /> 
+		<sdef n="sp" /> 
+		<sdef n="ref" /> 
+		<sdef n="sup" /> 
+		<sdef n="ord" /> 
+		<sdef n="qnt" /> 
+		<sdef n="num" /> 
+		<sdef n="pron" /> 
+		<sdef n="ij" /> 
+		<sdef n="sent" /> 
+		<sdef n="cm" /> 
+		<sdef n="lpar" /> 
+		<sdef n="rpar" /> 
+		<sdef n="web" /> 
+		<sdef n="apos" /> 
+		<sdef n="percent" /> 
+		<sdef n="guio" /> 
+		<sdef n="past" /> 
+		<sdef n="sep" /> 
+		<sdef n="sint" /> 
+		<sdef n="email" /> 
+		<sdef n="obj" /> 
+		<sdef n="subj" /> 
+		<sdef n="subs" /> 
+		<sdef n="pprs" /> 
+		<sdef n="url" /> 
+		<sdef n="gen" /> 
+		<sdef n="vbdo" /> 
+		<sdef n="comp" /> 
+		<sdef n="pres" /> 
+		<sdef n="vaux" /> 
+		<sdef n="sym" /> 
+		<sdef n="ND" /> 
+		<sdef n="GD" /> 
+  	</sdefs>
+	
+	<pardefs>
+		
+		<pardef n="/be__vbser">
+			<e><p><l>be</l><r>be<s n="vbser"/><s n="inf"/></r></p></e>
+			<e><p><l>are</l> <r>be<s n="vbser"/><s n="pres"/></r></p></e>
+			<e><p><l>am</l><r>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
+			<e><p><l>is</l><r>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>was</l><r>be<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
+			<e><p><l>was</l><r>be<s n="vbser"/><s n="past"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>were</l><r>be<s n="vbser"/><s n="past"/></r></p></e>
+			<e><p><l>been</l><r>be<s n="vbser"/><s n="pp"/></r></p></e>
+			<e><p><l>being</l><r>be<s n="vbser"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="/eat__vblex">
+			<e><p><l>eat</l><r>eat<s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l>eat</l><r>eat<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>eats</l><r>eat<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ate</l><r>eat<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>eaten</l><r>eat<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>eating</l><r>eat<s n="vblex"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="/a__det">
+			<e r="RL"><p><l><a/>a</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+			<e r="LR"><p><l>a</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+			<e r="LR"><p><l>an</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+		</pardef>
+		
+		<pardef n="accept__vblex">
+			<e><p><l></l><r><s n="vblex"/><s n="imp"/></r></p></e>
+			<e><p><l></l><r><s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l></l><r><s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>s</l><r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ed</l><r><s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>ed</l><r><s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ing</l><r><s n="vblex"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="after__cnjadv">
+			<e><p><l></l><r><s n="cnjadv"/></r></p></e>
+		</pardef>
+		
+		<pardef n="all__predet">
+			<e><p><l></l><r><s n="predet"/><s n="sp"/></r></p></e>
+			<!--
+				<e r="RL"><p><l/><r><s n="predet"/><s n="sg"/></r></p></e>
+				<e r="RL"><p><l/><r><s n="predet"/><s n="pl"/></r></p></e>
+			-->
+		</pardef>
+		
+		<pardef n="all__prn">
+			<e><p><l></l><r><s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+		</pardef>
+		
+		<pardef n="and__cnjcoo">
+			<e><p><l></l><r><s n="cnjcoo"/></r></p></e>
+		</pardef>
+		
+		<pardef n="approach__vblex">
+			<!--
+				<e><p><l/><r><s n="vblex"/><s n="imp"/></r></p></e>
+			-->
+			<e><p><l></l><r><s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l></l><r><s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>es</l><r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ed</l><r><s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>ed</l> <r><s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ing</l><r><s n="vblex"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="at__pr">
+			<e><p><l></l><r><s n="pr"/></r></p></e>
+		</pardef>
+		
+		<pardef n="bab/y__n">
+			<e><p><l>y</l><r>y<s n="n"/><s n="sg"/></r></p></e>
+			<e><p><l>ies</l><r>y<s n="n"/><s n="pl"/></r></p></e>
+			<e r="LR"><p><l>ys</l><r>y<s n="n"/><s n="pl"/></r></p></e>
+			<e r="LR"><p><l>ies'</l> <r>y<s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+			<e r="LR"><p><l>ys'</l><r>y<s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+		</pardef>
+		
+		<pardef n="BBC__n">
+			<e><p><l></l><r><s n="n"/><s n="acr"/><s n="sg"/></r></p></e>
+		</pardef>
+		
+		<pardef n="bass__n">
+			<e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
+			<e r="LR"><p><l></l><r><s n="n"/><s n="pl"/></r></p></e>
+			<e><p><l>es</l><r><s n="n"/><s n="pl"/></r></p></e>
+			<e r="LR"><p><l>es'</l><r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+		</pardef>
+		
+		<pardef n = "big/__adj">
+			<e><p><l></l><r><s n = "adj"/><s n = "sint"/></r></p></e>
+      		<e><p><l>ger</l><r><s n = "adj"/><s n = "sint"/><s n = "comp"/></r></p></e>
+      		<e><p><l>gest</l><r><s n = "adj"/><s n = "sint"/><s n = "sup"/></r></p></e>
+		</pardef>
+		
+		<pardef n="both__prn">
+			<e><p><l></l><r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="c/an__vbmod">
+			<e><p><l>an</l><r>an<s n="vaux"/><s n="pres"/></r></p></e>
+			<e r="RL"><p><l>an</l><r>an<s n="vaux"/><s n="inf"/></r></p></e>
+			<e><p><l>ould</l><r>an<s n="vaux"/><s n="past"/></r></p></e>
+		</pardef>
+		
+		<pardef n="cut__vblex">
+			<e><p><l>ting</l><r><s n="vblex"/><s n="ger"/></r></p></e>
+			<e><p><l></l><r><s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l></l><r><s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>s</l><r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+		</pardef>
+		
+		<pardef n="enough__det">
+			<e><p><l></l><r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="expensive__adj">
+			<e><p><l></l><r><s n="adj"/></r></p></e>
+		</pardef>
+		
+		<pardef n="f/ind__vblex">
+			<e><p><l>inding</l><r>ind<s n="vblex"/><s n="ger"/></r></p></e>
+			<e><p><l>ound</l><r>ind<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>ound</l><r>ind<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ind</l><r>ind<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>inds</l><r>ind<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+		</pardef>
+		
+		<pardef n="glad/__adj">
+			<e><p><l></l><r><s n="adj"/></r></p></e>
+			<e r="LR"><p><l>der</l><r><s n="adj"/><s n="comp"/></r></p></e>
+			<e r="LR"><p><l>dest</l><r><s n="adj"/><s n="sup"/></r></p></e>
+		</pardef>
+		
+		<pardef n="ha/ve__vbhaver">
+			<e><p><l>ve</l><r>ve<s n="vbhaver"/><s n="inf"/></r></p></e>
+			<e><p><l>ve</l><r>ve<s n="vbhaver"/><s n="pres"/></r></p></e>
+			<e><p><l>s</l><r>ve<s n="vbhaver"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>d</l> <r>ve<s n="vbhaver"/><s n="past"/></r></p></e>
+			<e r="RL"><p><l>d</l><r>ve<s n="vbhaver"/><s n="pp"/></r></p></e>
+			<e><p><l>ving</l><r>ve<s n="vbhaver"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="ha/ve__vblex">
+			<e><p><l>ve</l><r>ve<s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l>ve</l><r>ve<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>s</l><r>ve<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>d</l><r>ve<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>d</l><r>ve<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ving</l><r>ve<s n="vblex"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="her__det">
+			<e r="LR"><p><l></l><r><s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="pos"/><s n="sg"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="pos"/><s n="pl"/></r></p></e>
+		</pardef>
+
+	  	<pardef n="house__n">
+	    	<e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
+	  	</pardef>
+		
+		<pardef n="liv/e__vblex">
+			<e><p><l>e</l><r>e<s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l>e</l><r>e<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>es</l><r>e<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ed</l><r>e<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>ed</l><r>e<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ing</l><r>e<s n="vblex"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="li/fe__n">
+			<e><p><l>fe</l><r>fe<s n="n"/><s n="sg"/></r></p></e>
+			<e><p><l>ves</l><r>fe<s n="n"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="long/__adj">
+			<e><p><l></l><r><s n="adj"/><s n="sint"/></r></p></e>
+			<e><p><l>er</l><r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+			<e><p><l>est</l><r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
+		</pardef>
+		
+		<pardef n="many__det">
+			<e><p><l></l><r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="Mauritius__np">
+			<e><p><l></l><r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+		</pardef>
+
+		<pardef n="maybe__adv">
+			<e><p><l></l><r><s n="adv"/></r></p></e>
+		</pardef>
+		
+		<pardef n="much__det">
+			<e><p><l></l><r><s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+		</pardef>
+		
+		<pardef n="nice/__adj">
+			<e><p><l></l><r><s n="adj"/><s n="sint"/></r></p></e>
+			<e><p><l>r</l><r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+			<e><p><l>st</l><r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
+		</pardef>
+		
+		<pardef n="politics__n">
+			<e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
+			<e><p><l></l><r><s n="n"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="second__adj">
+			<e><p><l></l><r><s n="adj"/><s n="ord"/></r></p></e>
+		</pardef>
+		
+		<pardef n="t/ake__vblex">
+			<e><p><l>ake</l><r>ake<s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l>ake</l><r>ake<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>akes</l> <r>ake<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ook</l><r>ake<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>aken</l><r>ake<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>aking</l><r>ake<s n="vblex"/><s n="ger"/></r></p></e>
+		</pardef>
+		
+		<pardef n="th/at__det">
+			<e><p><l>at</l><r>at<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
+			<e><p><l>ose</l> <r>at<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="th/at__prn">
+			<e><p><l>at</l><r>at<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+			<e><p><l>ose</l><r>at<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="th/is__det">
+			<e><p><l>is</l> <r>is<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
+			<e><p><l>ese</l><r>is<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="th/is__prn">
+			<e><p><l>is</l><r>is<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+			<e><p><l>ese</l><r>is<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="that__rel">
+			<e><p><l></l><r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+		</pardef>
+
+		<pardef n="the__det">
+			<e><p><l></l><r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="def"/><s n="sg"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="def"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="very__preadv">
+			<e><p><l></l><r><s n="preadv"/></r></p></e>
+		</pardef>
+		
+		<pardef n="what__det">
+			<e><p><l></l><r><s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="itg"/><s n="sg"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="det"/><s n="itg"/><s n="pl"/></r></p></e>
+		</pardef>
+		
+		<pardef n="what__prn">
+			<e><p><l></l> <r><s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+		</pardef>
+	
+	</pardefs>
+  
+  	<section id ="main" type ="standard">
+  		
+  		<!--//  [A]  //-->
+  		
+  		<e lm="a"><i></i><par n="/a__det"/></e>
+  		<e lm="as"><i>as</i><par n="very__preadv"/></e>
+  		<e lm="as"><i>as</i><par n="after__cnjadv"/></e>
+  		<e lm="agricultural"><i>agricultural</i><par n="expensive__adj"/></e>
+  		<e lm="and"><i>and</i><par n="and__cnjcoo"/></e>
+  		<e lm="all"><i>all</i><par n="all__predet"/></e>
+  		<e lm="all"><i>all</i><par n="all__prn"/></e>
+  		<e lm="at"><i>at</i><par n="at__pr"/></e>
+  		
+  		<!--//  [B]  //-->
+  		
+  		<e lm="banana"><i>banana</i><par n="house__n"/></e>
+  		<e lm="be"><par n="/be__vbser"/></e>
+  		<e lm="because of"><i>because<b/>of</i><par n="at__pr"/></e>
+  		<e lm="beginning"><i>beginning</i><par n="house__n"/></e>
+		<e lm="big"><i>big</i><par n = "big/__adj" /></e>
+  		<e lm="bird"><i>bird</i><par n="house__n"/></e>
+  		<e lm="but"><i>but</i><par n="and__cnjcoo"/></e>
+  		<e lm="but"><i>but</i><par n="at__pr"/></e>
+  		<e lm="by"><i>by</i><par n="at__pr"/></e>
+  		
+  		<!--//  [C]  //-->
+  		
+  		<e lm="can"><i>c</i><par n="c/an__vbmod"/></e>
+  		<e lm="century"><i>centur</i><par n="bab/y__n"/></e>
+  		<e lm="chance"><i>chance</i><par n="house__n"/></e>
+  		<e lm="colonist"><i>colonist</i><par n="house__n"/></e>
+  		<e lm="consist"><i>consist</i><par n="accept__vblex"/></e>
+  		<e lm="contrary"><i>contrary</i><par n="expensive__adj"/></e>
+  		<e lm="cover"><i>cover</i><par n="accept__vblex"/></e>
+  		<e lm="cut"><i>cut</i><par n="house__n"/></e>
+  		<e lm="cut"><i>cut</i><par n="cut__vblex"/></e>
+  		
+  		<!--//  [D]  //-->  		
+  		
+  		<e lm="deer"><i>deer</i><par n="house__n"/></e>
+  		<e lm="different"><i>different</i><par n="expensive__adj"/></e>
+  		<e lm="dodo"><i>dodo</i><par n="house__n"/></e>
+		<e lm="dog"><i>dog</i><par n="house__n"/></e>
+  		<e lm="during"><i>during</i><par n="at__pr"/></e>
+  		<!--
+  			<e lm="filao"><i>filao</i><par n="house__n"/></e>
+  			<e lm="summer"><i>flamboyant</i><par n="house__n"/></e>
+  		-->
+  		
+  		<!--//  [E]  //-->
+  		
+  		<e lm="eat"><par n="/eat__vblex"/></e>
+  		<e lm="example"><i>example</i><par n="house__n"/></e>
+  		<e lm="extremely"><i>extremely</i><par n="maybe__adv"/></e>
+  		
+  		<!--//  [F]  //-->
+  		
+  		<e lm="fauna"><i>fauna</i><par n="house__n"/></e>
+  		<e lm="find"><i>f</i><par n="f/ind__vblex"/></e>
+  		<e lm="fish"><i>fish</i><par n="bass__n"/></e>
+  		<e lm="flaming"><i>flaming</i><par n="expensive__adj"/></e>
+  		<e lm="flower"><i>flower</i><par n="house__n"/></e>
+  		<e lm="found"><i>found</i><par n="accept__vblex"/></e>
+  		<e lm="for"><i>for</i><par n="after__cnjadv"/></e>
+  		<e lm="for"><i>for</i><par n="at__pr"/></e>
+  		<e lm="frequently"><i>frequently</i><par n="maybe__adv"/></e>
+  		<e lm="fruit"><i>fruit</i><par n="house__n"/></e>
+  		
+  		<!--//  [G]  //-->
+  		
+  		<e lm="guava"><i>guava</i><par n="house__n"/></e>
+  		
+  		<!--//  [H]  //-->
+  		
+  		<e lm="have"><i>ha</i><par n="ha/ve__vbhaver"/></e>
+  		<e lm="have"><i>ha</i><par n="ha/ve__vblex"/></e>
+  		<e lm="hedgehog"><i>hedgehog</i><par n="house__n"/></e>
+  		
+  		<!--//  [I]  //-->
+  		
+  		<e lm="import"><i>import</i><par n="accept__vblex"/></e>
+		<e lm="in"><i>in</i><par n="at__pr"/></e>
+  		<!-- <e lm="in"><i>in</i><par n="maybe__adv"/></e> -->
+  		<e lm="insect"><i>insect</i><par n="house__n"/></e>
+  		<e lm="interesting"><i>interesting</i><par n="expensive__adj"/></e>
+  		<e lm="isolation"><i>isolation</i><par n="house__n"/></e>
+  		<e lm="its"><i>its</i><par n="her__det"/></e>
+  		
+  		<!--//  [K]  //-->
+  		
+  		<e lm="kestrel"><i>kestrel</i><par n="house__n"/></e>
+  		<e lm="kind"><i>kind</i><par n="long/__adj"/></e>
+  		
+  		<!--//  [L]  //-->
+  		
+  		<e lm="land"><i>land</i><par n="house__n"/></e>
+  		<e lm="last"><i>last</i><par n="second__adj"/></e>
+	  	<e lm="left"><i>left</i><par n="house__n"/></e>
+	  	<e lm="left"><i>left</i><par n="expensive__adj"/></e>
+	  	<e lm="left"><i>left</i><par n="maybe__adv"/></e>
+  		<e lm="life"><i>li</i><par n="li/fe__n"/></e>
+  		<e lm="like"><i>lik</i><par n="liv/e__vblex"/></e>
+  		<e lm="like"><i>like</i><par n="at__pr"/></e>
+  		
+  		<!--//  [M]  //-->
+  		
+  		<e lm="main"><i>main</i><par n="expensive__adj"/></e>
+  		<e lm="mammal"><i>mammal</i><par n="house__n"/></e>
+  		<e lm="mango"><i>mango</i><par n="house__n"/></e>
+  		<e lm="many"><i>many</i><par n="many__det"/></e>
+  		<e lm="Mauritius"><i>Mauritius</i><par n="Mauritius__np"/></e>
+  		<e lm="mauritian"><i>mauritian</i><par n="house__n"/></e>
+  		<e lm="mention"><i>mention</i><par n="accept__vblex"/></e>
+  		<e lm="monkey"><i>monkey</i><par n="house__n"/></e>
+  		<e lm="mollusc"><i>mollusc</i><par n="house__n"/></e>
+  		<e lm="more"><i>more</i><par n="enough__det"/></e>
+  		<e lm="more"><i>more</i><par n="very__preadv"/></e>
+  		<e lm="more"><i>more</i><par n="maybe__adv"/></e>
+  		<e lm="mostly"><i>mostly</i><par n="maybe__adv"/></e>
+	  	<e lm="much"><i>much</i><par n="much__det"/></e>
+	  	<e lm="much"><i>much</i><par n="maybe__adv"/></e>
+  		
+  		<!--//  [N]  //-->
+  		
+		<e lm="ND"><i>ND</i><par n="BBC__n"/></e>
+  		<e lm="near"><i>near</i><par n="maybe__adv"/></e>
+  		<e lm="not"><i>not</i><par n="maybe__adv"/></e>
+  		<e lm="nowadays"><i>nowadays</i><par n="maybe__adv"/></e>
+  		
+  		<!--//  [O]  //-->
+  		
+  		<e lm="of"><i>of</i><par n="at__pr"/></e>
+	  	<e lm="original"><i>original</i><par n="house__n"/></e>
+	  	<e lm="original"><i>original</i><par n="expensive__adj"/></e>
+  		
+  		<!--//  [P]  //-->
+  		
+  		<e lm="pineapple"><i>pineapple</i><par n="house__n"/></e>
+  		<e lm="plant"><i>plant</i><par n="house__n"/></e>
+  		<e lm="plant"><i>plant</i><par n="accept__vblex"/></e>
+  		
+  		<!--//  [R]  //-->
+  		
+  		<e lm="rare"><i>rare</i><par n="nice/__adj"/></e>
+  		<e lm="red"><i>red</i><par n="house__n"/></e>
+  		<e lm="red"><i>red</i><par n="house__n"/></e>
+  		<e lm="red"><i>red</i><par n="glad/__adj"/></e>
+  		<e lm="replace"><i>replac</i><par n="liv/e__vblex"/></e>
+  		<e lm="rich"><i>rich</i><par n="long/__adj"/></e>
+  		<e lm="road"><i>road</i><par n="house__n"/></e>
+  		
+  		<!--//  [S]  //-->
+  		
+  		<e lm="shell"><i>shell</i><par n="house__n"/></e>
+  		<e lm="some"><i>some</i><par n="enough__det"/></e>
+  		<e lm="some"><i>some</i><par n="maybe__adv"/></e>
+  		<e lm="some"><i>some</i><par n="both__prn"/></e>
+  		<e lm="souvenir"><i>souvenir</i><par n="house__n"/></e>
+  		<e lm="species"><i>species</i><par n="politics__n"/></e>
+  		<e lm="summer"><i>summer</i><par n="house__n"/></e>
+  		
+  		<!--//  [T]  //-->
+  		
+  		<e lm="take"><i>t</i><par n="t/ake__vblex"/></e>
+  		<e lm="than"><i>than</i><par n="and__cnjcoo"/></e>
+  		<e lm="that"><i>th</i><par n="th/at__det"/></e>
+  		<e lm="that"><i>th</i><par n="th/at__prn"/></e>
+	  	<e lm="the"><i>the</i><par n="the__det"/></e>
+	  	<e lm="there"><i>there</i><par n="maybe__adv"/></e>
+  		<e lm="this"><i>th</i><par n="th/is__det"/></e>
+  		<e lm="this"><i>th</i><par n="th/is__prn"/></e>
+  		<e lm="to"><i>to</i><par n="at__pr"/></e>
+  		<e lm="too"><i>too</i><par n="very__preadv"/></e>
+  		<e lm="too"><i>too</i><par n="maybe__adv"/></e>
+  		<e lm="tree"><i>tree</i><par n="house__n"/></e>
+  		
+  		<!--//  [V]  //-->
+  		
+  		<e lm="variety"><i>variet</i><par n="bab/y__n"/></e>
+	  	<e lm="vegetation"><i>vegetation</i><par n="house__n"/></e>
+  		<e lm="very"><i>very</i><par n="very__preadv"/></e>
+  		
+  		<!--//  [W]  //-->
+  		
+  		<e lm="watch"><i>watch</i><par n="approach__vblex"/></e>
+  		<e lm="wide"><i>wide</i><par n="nice/__adj"/></e>
+  		<e lm="which"><i>which</i><par n="what__det"/></e>
+  		<e lm="which"><i>which</i><par n="what__prn"/></e>
+  		<e lm="which"><i>which</i><par n="that__rel"/></e>
+  		<e lm="with"><i>with</i><par n="at__pr"/></e>
+  		<e lm="wonderful"><i>wonderful</i><par n="expensive__adj"/></e>
+  		<e lm="world"><i>world</i><par n="house__n"/></e>
+  		<e lm="world"><i>world</i><par n="expensive__adj"/></e>
+  		
+  	</section>
+  
+</dictionary>

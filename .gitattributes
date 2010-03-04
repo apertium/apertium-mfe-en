@@ -1,1 +1,5 @@
 * text=auto !eol
+/Makefile -text
+/apertium-mfe-en.en.dix -text
+/apertium-mfe-en.mfe-en.dix -text
+/apertium-mfe-en.mfe.dix -text
