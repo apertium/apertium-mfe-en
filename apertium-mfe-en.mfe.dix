@@ -30,7 +30,7 @@
 			<e><p><l></l><r><s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
 		</pardef>
 		
-		<pardef n ="gros__adj">
+		<pardef n ="gro__adj">
 			<e><p><l></l> <r><s n="adj"/></r></p></e>
 		</pardef>
 		
@@ -58,8 +58,8 @@
    		
    		<!-- [ G ] -->
    		<e lm="galupe"><i>galupe</i><par n="chanje__vblex"/></e>
-   		<e lm="gro" r="LR"><p><l>gro</l><r>gros</r></p><par n="gros__adj"/></e> <!-- Accept 'gro' as 'gros' -->
-   		<e lm="gros"><i>gros</i><par n="gros__adj"/></e>
+   		<e lm="gros" r="LR"><p><l>gros</l><r>gro</r></p><par n="gro__adj"/></e> <!-- Accept 'gros' as 'gro' -->
+   		<e lm="gro"><i>gro</i><par n="gro__adj"/></e>
    		
    		<!-- [ K ] -->
    		<e lm="kumans"><i>kumans</i><par n="liv__n"/></e>

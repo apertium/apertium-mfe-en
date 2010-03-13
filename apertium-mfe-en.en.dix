@@ -23,7 +23,6 @@
 		<sdef n="pprs" />
 		<sdef n="pr" />
 		<sdef n="pres" />
-		<sdef n="pri" />
 		<sdef n="sg" />
 		<sdef n="sint" />
 		<sdef n="sp" /> 
@@ -44,8 +43,8 @@
 		<pardef n="/be__vblex">
 			<e><p><l>be</l><r>be<s n="vblex"/><s n="inf"/></r></p></e>
 			<e><p><l>are</l><r>be<s n="vblex"/><s n="pres"/></r></p></e>
-			<e><p><l>am</l><r>be<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
-			<e><p><l>is</l><r>be<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>am</l><r>be<s n="vblex"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
+			<e><p><l>is</l><r>be<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 			<e><p><l>was</l><r>be<s n="vblex"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
 			<e><p><l>was</l><r>be<s n="vblex"/><s n="past"/><s n="p3"/><s n="sg"/></r></p></e>
 			<e><p><l>were</l><r>be<s n="vblex"/><s n="past"/></r></p></e>
@@ -60,7 +59,7 @@
 		<pardef n="accept__vblex">
 			<e><p><l></l><r><s n="vblex"/><s n="inf"/></r></p></e>
 			<e><p><l></l><r><s n="vblex"/><s n="pres"/></r></p></e>
-			<e><p><l>s</l><r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>s</l><r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 			<e><p><l>ed</l><r><s n="vblex"/><s n="past"/></r></p></e>
 			<e><p><l>ed</l><r><s n="vblex"/><s n="pp"/></r></p></e>
 			<e><p><l>ing</l><r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -75,7 +74,7 @@
 		<pardef n="bec/ome__vblex">
 			<e><p><l>ome</l><r>ome<s n="vblex"/><s n="inf"/></r></p></e>
 			<e><p><l>ome</l><r>ome<s n="vblex"/><s n="pres"/></r></p></e>
-			<e><p><l>omes</l><r>ome<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>omes</l><r>ome<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 			<e><p><l>ame</l><r>ome<s n="vblex"/><s n="past"/></r></p></e>
 			<e><p><l>ome</l><r>ome<s n="vblex"/><s n="pp"/></r></p></e>
 			<e><p><l>oming</l><r>ome<s n="vblex"/><s n="ger"/></r></p>
@@ -96,7 +95,7 @@
 		<pardef n="ke/ep__vblex">
 			<e><p><l>ep</l><r>ep<s n="vblex"/><s n="inf"/></r></p></e>
 			<e><p><l>ep</l><r>ep<s n="vblex"/><s n="pres"/></r></p></e>
-			<e><p><l>eps</l><r>ep<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>eps</l><r>ep<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 			<e><p><l>pt</l><r>ep<s n="vblex"/><s n="past"/></r></p></e>
 			<e><p><l>pt</l><r>ep<s n="vblex"/><s n="pp"/></r></p></e>
 			<e><p><l>eping</l><r>ep<s n="vblex"/><s n="ger"/></r></p></e>
@@ -117,12 +116,10 @@
 		<pardef n="r/un__vblex">
 			<e><p><l>un</l><r>un<s n="vblex"/><s n="inf"/></r></p></e>
 			<e><p><l>un</l><r>un<s n="vblex"/><s n="pres"/></r></p></e>
-			<e><p><l>uns</l><r>un<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>uns</l><r>un<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 			<e><p><l>an</l><r>un<s n="vblex"/><s n="past"/></r></p></e>
 			<e><p><l>un</l><r>un<s n="vblex"/><s n="pp"/></r></p></e>
 			<e><p><l>unning</l><r>un<s n="vblex"/><s n="ger"/></r></p></e>
-			<e><p><l>unning</l><r>un<s n="vblex"/><s n="pprs"/></r></p></e>
-			<e><p><l>unning</l><r>un<s n="vblex"/><s n="subs"/></r></p></e>
 		</pardef>
 		
 		<pardef n="the__det">
@@ -135,49 +132,41 @@
   
   	<section id ="main" type ="standard">
   		
-  		<!-- [ A ] -->
+                <!-- Determiners -->
   		<e lm="a"><i></i><par n="/a__det"/></e>
+  		<e lm="the"><i>the</i><par n="the__det"/></e>
+
+                <!-- Prepositions -->
   		<e lm="at"><i>at</i><par n="at__pr"/></e>
-  		<e lm="away"><i>away</i><par n="maybe__adv"/></e>
-  		
-  		<!-- [ B ] -->
-  		<e lm="basket"><i>basket</i><par n="house__n"/></e>
-  		<e lm="be"><par n="/be__vblex"/></e>
-  		<e lm="big"><i>big</i><par n = "big/__adj" /></e>
-  		
-  		
-  		<!-- [ C ] -->
-  		<e lm="cat"><i>cat</i><par n="house__n"/></e>
-  		<e lm="come"><i>c</i><par n="bec/ome__vblex"/></e>
-  		
-  		<!-- [ D ] -->
-  		<e lm="dog"><i>dog</i><par n="house__n"/></e>
-  		
-  		<!-- [ F ] -->
-  		<e lm="fast"><i>fast</i><par n="long/__adj"/></e>
-  		
-  		<!-- [ I ] -->
   		<e lm="in"><i>in</i><par n="at__pr"/></e>
-  		<e lm="in"><i>in</i><par n="maybe__adv"/></e>
-  		<e lm="in the"><i>in<b/>the</i><par n="at__pr"/></e>
-  		
-  		<e lm="is coming"><i>is<b/>coming</i><par n="bec/ome__vblex"/></e><!--NEED TO CHECK-->
-  		
-  		<!-- [ Q ] -->
+  		<e lm="towards"><i>towards</i><par n="at__pr"/></e>
+
+                <!-- Adverbs -->
+
+  		<e lm="away"><i>away</i><par n="maybe__adv"/></e>
   		<e lm="quickly"><i>quickly</i><par n="maybe__adv"/></e>
+  		<e lm="in"><i>in</i><par n="maybe__adv"/></e>
+
+                <!-- Verbs -->
   		
-  		<!-- [ R ] -->
+  		<e lm="be"><par n="/be__vblex"/></e>
+
+  		<e lm="come"><i>c</i><par n="bec/ome__vblex"/></e>
   		<e lm="run"><i>r</i><par n="r/un__vblex"/></e>
-  		<e lm="run away"><i>r<b/>away</i><par n="r/un__vblex"/></e><!--NEED TO CHECK-->
-  		
-  		<!-- [ S ] -->
+  		<e lm="run away"><i>r</i><par n="r/un__vblex"/><p><l><b/>away</l><r><g><b/>away</g></r></p></e>
   		<e lm="sleep"><i>sle</i><par n="ke/ep__vblex"/></e>
   		<e lm="start"><i>start</i><par n="accept__vblex"/></e>
+
+                <!-- Adjectives -->
+
+  		<e lm="big"><i>big</i><par n = "big/__adj" /></e>
+  		<e lm="fast"><i>fast</i><par n="long/__adj"/></e>
   		
-  		<!-- [ T ] -->
-  		<e lm="the"><i>the</i><par n="the__det"/></e>
-  		<e lm="towards"><i>towards</i><par n="at__pr"/></e>
-  			
+                <!-- Nouns -->
+
+  		<e lm="basket"><i>basket</i><par n="house__n"/></e>
+  		<e lm="cat"><i>cat</i><par n="house__n"/></e>
+  		<e lm="dog"><i>dog</i><par n="house__n"/></e>
+  		
   	</section>
-  
 </dictionary>
