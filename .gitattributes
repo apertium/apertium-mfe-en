@@ -2,5 +2,6 @@
 /Makefile -text
 /apertium-mfe-en.en.dix -text
 /apertium-mfe-en.mfe-en.dix -text
+/apertium-mfe-en.mfe-en.t1x -text
 /apertium-mfe-en.mfe.dix -text
 /mfe-en.prob -text

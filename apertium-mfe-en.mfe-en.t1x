@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<transfer>
+  
+  <section-def-cats><!-- defining categories: group grammatical symbols -->
+    
+    <def-cat n="nom"><!-- adding a category for nouns -->
+      <cat-item tags="n.*"/><!-- catches all nouns (lemmas followed by <n> then anything) and refers to them as "nom" -->
+    </def-cat>
+    
+  </section-def-cats><!-- end of categories definition -->
+  
+  <section-def-attrs><!-- defining attributes: group a set of symbols that can be chosen from -->
+    
+    <def-attr n="nbr"><!-- defining attribute: nbr (number), either singular (sg) or plural (pl) -->
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+    </def-attr>
+    
+    <def-attr n="a_nom"><!-- defining the attribute: a_nom (attribute noun) -->
+      <attr-item tags="n"/>
+    </def-attr>
+    
+  </section-def-attrs><!-- end of attributes definition -->
+  
+  <section-def-vars><!-- defining global variables: store or transfer attributes between rules -->
+    
+    <def-var n="number"/>
+    
+  </section-def-vars><!-- end global variables definition -->
+  
+  <section-rules>
+    
+    <rule><!-- defining a rule -->
+      <pattern>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <out>
+          <lu><!-- lexical unit -->
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_nom"/>
+            <clip pos="1" side="tl" part="nbr"/>
+          </lu>
+        </out>
+      </action>
+    </rule><!-- end of rule-definition -->
+    
+  </section-rules>
+  
+  
+</transfer>

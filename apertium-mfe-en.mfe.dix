@@ -18,6 +18,7 @@
 	</sdefs>
   
 	<pardefs>
+		
 		<pardef n="pe__part">
 			<e><p><l></l><r><s n="part"/></r></p></e>
 		</pardef>
@@ -49,9 +50,9 @@
 	</pardefs>
   
    	<section id="main" type="standard">
-                <!-- Particles -->
- 
-   		<e lm="pe"><i>pe</i><par n="pe__part"/></e>
+        
+   		<!-- Particles -->
+ 		<e lm="pe"><i>pe</i><par n="pe__part"/></e>
    		<e lm="pou"><i>pou</i><par n="pe__part"/></e>
    		<e lm="ti"><i>ti</i><par n="pe__part"/></e>
                
