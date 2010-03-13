@@ -5,36 +5,72 @@
 	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzž</alphabet>
    	
 	<sdefs>
-		<sdef n = "adj"/>
-     	<sdef n = "det" />
-     	<sdef n = "ind" />
-     	<sdef n = "n" />
-	  	<sdef n = "ND" />
-     	<sdef n = "pl" />
-    	<sdef n = "pr" />
-	  	<sdef n = "sg" />
-     	<sdef n = "sint"/>
-		<sdef n = "np"/>
-		<sdef n = "top"/>
+		
+		<sdef n="adj" /> 
+		<sdef n="adv" />
+		<sdef n="comp" /> 
+		<sdef n="det" />
+		<sdef n="ind" />
+		<sdef n="n" /> 
+		<sdef n="ND" />
+		<sdef n="p1" />
+		<sdef n="pl" />
+		<sdef n="pr" />
+		<sdef n="sg" />
+		<sdef n="sint" /> 
+		<sdef n="vblex" />
+	
 	</sdefs>
 
 	<pardefs>
 	  
-	  <pardef n="ND">
-	    <e r="RL"><p><l></l><r><s n="sg"/></r></p></e>
-	    <e r="RL"><p><l></l><r><s n="pl"/></r></p></e>
-	  	<e r="LR"><p><l></l><r><s n="ND"/></r></p></e>
-	  </pardef>
+		<pardef n="ND">
+			<e r="RL"><p><l></l><r><s n="sg"/></r></p></e>
+			<e r="RL"><p><l></l><r><s n="pl"/></r></p></e>
+			<e r="LR"><p><l></l><r><s n="ND"/></r></p></e>
+		</pardef>
 	
 	</pardefs>
 
    	<section id = "main" type = "standard">
    		
-   		<e><p><l>dan<s n = "pr"/></l><r>in<s n = "pr"/></r></p></e>
-     	<e><p><l>gro<s n = "adj"/></l><r>big<s n = "adj"/><s n = "sint"/></r></p></e>
-     	<e><p><l>enn<s n = "det"/><s n="ind"/></l><r>a<s n = "det"/><s n = "ind"/></r></p></e>
-     	<e><p><l>lisyen<s n="n"/></l><r>dog<s n="n"/></r></p><par n="ND"/></e>
-   		<e><p><l>Moris<s n="np"/><s n="top"/><s n="sg"/></l><r>Mauritius<s n="np"/><s n="top"/></r></p></e>
+   		<!-- [ A ] -->
+   		<e r="RL"><p><l>anver<s n="pr"/></l><r>towards<s n="pr"/></r></p></e>
+   		
+   		<!-- [ D ] -->
+   		<e><p><l>dan<s n="pr"/></l><r>in<s n="pr"/></r></p></e>
+   		<e><p><l>dan<s n="pr"/></l><r>in<b/>the<s n="pr"/></r></p></e>
+   		<e><p><l>dormi<s n="vblex"/></l><r>sleep<s n="vblex"/></r></p></e>
+   		
+   		<!-- [ E ] -->
+   		<e r="RL"><p><l>enn<s n="det"/><s n="ind"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
+   		
+   		<!-- [ G ] -->
+   		<e><p><l>galupe<s n="vblex"/></l><r>run<s n="vblex"/></r></p></e>
+   		<e><p><l>gros<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
+   		<e><p><l>gro<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
+   		
+   		<!-- [ K ] -->
+   		<e><p><l>kumans<s n="n"/></l><r>start<s n="n"/></r></p></e>
+   		
+   		<!-- [ L ] -->
+   		<e><p><l>lisyen<s n="n"/></l><r>dog<s n="n"/></r></p><par n="ND"/></e>
+   		
+   		<!-- [ P ] -->
+   		<e><p><l>panye<s n="n"/></l><r>basket<s n="n"/></r></p><par n="ND"/></e>
+   		
+   		<!--<e><p><l>pe<b/>vini<s n="vblex"/></l><r>is<g><b/>coming</g><s n="vblex"/></r></p></e>   NEED TO CHECK  -->
+   		
+   		<!-- [ S ] -->
+   		<e><p><l>sat<s n="n"/></l><r>cat<s n="n"/></r></p><par n="ND"/></e> 
+   		<e><p><l>sov<s n="vblex"/></l><r>run<g><b/>away</g><s n="vblex"/></r></p></e>
+   		
+   		<!-- [ T ] -->
+   		<e><p><l>truv<s n="vblex"/></l><r>see<s n="vblex"/></r></p></e>
+   		
+   		<!-- [ V ] -->
+   		<e><p><l>vit-vit<s n="adv"/></l><r>quickly<s n="adv"/></r></p></e>
+   		<e><p><l>vini<s n="vblex"/></l><r>come<s n="vblex"/></r></p></e>
    		
    	</section>
 	

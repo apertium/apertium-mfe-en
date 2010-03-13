@@ -4,50 +4,83 @@
 	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzžYy</alphabet>
 	
 	<sdefs>
-		<sdef n="adj"/>
-     	<sdef n="n" />
-     	<sdef n="det" />
-     	<sdef n="ind" />
-	 	<sdef n="pr" />
-		<sdef n="top" c="Toponym"/>
-		<sdef n="np"/>
-		<sdef n="sg"/>
-   	</sdefs>
+		
+		<sdef n = "adj" />
+		<sdef n = "adv" />
+		<sdef n = "det" />
+		<sdef n = "ind" />
+		<sdef n = "n" />
+		<sdef n = "pr" />
+		<sdef n = "sg" />
+		<sdef n = "vblex" />
+		
+	</sdefs>
   
 	<pardefs>
 		
 		<pardef n="an__pr">
 			<e><p><l></l><r><s n="pr"/></r></p></e>
 		</pardef>
-	  	<pardef n="enn__det"> 
-	  		<e><p><l></l><r><s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
-	  	</pardef>
+		
+		<pardef n="chanje__vblex">
+			<e><p><l></l><r><s n="vblex"/></r></p></e>
+		</pardef>
+		
+		<pardef n="enn__det"> 
+			<e><p><l></l><r><s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+		</pardef>
+		
 		<pardef n ="gros__adj">
 			<e><p><l></l> <r><s n="adj"/></r></p></e>
 		</pardef>
-	  	<pardef n="liv__n"> 
-	  		<e><p><l></l><r><s n="n"/></r></p></e>
-	  	</pardef>
 		
-		<pardef n="Moris__np">
-			<e><p><l/><r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
-		</pardef>>
+		<pardef n="isit__adv">
+			<e><p><l></l><r><s n="adv"/></r></p></e>
+		</pardef>
+		
+		<pardef n="liv__n"> 
+			<e><p><l></l><r><s n="n"/></r></p></e>
+		</pardef>
 
 	</pardefs>
   
    	<section id="main" type="standard">
    		
-  		<e lm="dan"><i>dan</i><par n="an__pr"/></e>	
-
-   		<e lm="enn"><i>enn</i><par n="enn__det"/></e> 
-
-     		<e lm="lisyen"><i>lisyen</i><par n="liv__n"/></e>
-
-
+   		<!-- [ A ] -->
+   		<e lm="anver"><i>anver</i><par n="an__pr"/></e>
+   		
+   		<!-- [ D ] -->
+   		<e lm="dan"><i>dan</i><par n="an__pr"/></e>
+   		<e lm="dormi"><i>dormi</i><par n="chanje__vblex"/></e>
+   		
+   		<!-- [ E ] -->
+   		<e lm="enn"><i>enn</i><par n="enn__det"/></e>
+   		
+   		<!-- [ G ] -->
+   		<e lm="galupe"><i>galupe</i><par n="chanje__vblex"/></e>
    		<e lm="gro" r="LR"><p><l>gro</l><r>gros</r></p><par n="gros__adj"/></e> <!-- Accept 'gro' as 'gros' -->
    		<e lm="gros"><i>gros</i><par n="gros__adj"/></e>
-
-   		<e lm="Moris"><i>Moris</i><par n="Moris__np"/></e>
+   		
+   		<!-- [ K ] -->
+   		<e lm="kumans"><i>kumans</i><par n="liv__n"/></e>
+   		
+   		<!-- [ L ] -->
+   		<e lm="lisyen"><i>lisyen</i><par n="liv__n"/></e>
+   		
+   		<!-- [ P ] -->
+   		<e lm="panye"><i>panye</i><par n="liv__n"/></e>
+   		
+   		<!-- [ S ] -->
+   		<e lm="sat"><i>sat</i><par n="liv__n"/></e>
+   		<e lm="sov"><i>sov</i><par n="chanje__vblex"/></e>
+   		
+   		<!-- [ T ] -->
+   		<e lm="truve"><i>truve</i><par n="chanje__vblex"/></e>
+   		
+   		<!-- [ V ] -->
+   		<e lm="vit-vit"><i>vit-vit</i><par n="isit__adv"/></e>
+   		<e lm="vini"><i>vini</i><par n="chanje__vblex"/></e>
+   		
    </section>
   
 </dictionary>
