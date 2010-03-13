@@ -59,7 +59,7 @@
    		<!-- [ P ] -->
    		<e><p><l>panye<s n="n"/></l><r>basket<s n="n"/></r></p><par n="ND"/></e>
    		
-   		<!--<e><p><l>pe<b/>vini<s n="vblex"/></l><r>is<g><b/>coming</g><s n="vblex"/></r></p></e>   NEED TO CHECK  -->
+   		<e><p><l>vini<s n="vblex"/></l><r>come<s n="vblex"/></r></p></e>
    		
    		<!-- [ S ] -->
    		<e><p><l>sat<s n="n"/></l><r>cat<s n="n"/></r></p><par n="ND"/></e> 
