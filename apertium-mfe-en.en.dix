@@ -22,6 +22,7 @@
 		<sdef n="pp" />
 		<sdef n="pprs" />
 		<sdef n="pr" />
+		<sdef n="pri" />
 		<sdef n="pres" />
 		<sdef n="sg" />
 		<sdef n="sint" />
@@ -120,6 +121,18 @@
 			<e><p><l>unning</l><r>un<s n="vblex"/><s n="ger"/></r></p></e>
 		</pardef>
 		
+		<pardef n="s/ee__vblex">
+			
+			<e><p><l>ee</l><r>ee<s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l>ee</l><r>ee<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>ees</l><r>ee<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>aw</l><r>ee<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>een</l><r>ee<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>eeing</l><r>ee<s n="vblex"/><s n="ger"/></r></p></e>
+			<e><p><l>eeing</l><r>ee<s n="vblex"/><s n="pprs"/></r></p></e>
+			<e><p><l>eeing</l><r>ee<s n="vblex"/><s n="subs"/></r></p></e>
+		</pardef>
+		
 		<pardef n="the__det">
 			<e><p><l></l><r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
 			<e r="RL"><p><l></l><r><s n="det"/><s n="def"/><s n="sg"/></r></p></e>
@@ -130,31 +143,29 @@
   
   	<section id ="main" type ="standard">
   		
-         <!-- Determiners -->
+        <!-- Determiners -->
   		<e lm="a"><i></i><par n="/a__det"/></e>
   		<e lm="the"><i>the</i><par n="the__det"/></e>
 
         <!-- Prepositions -->
-  		<e lm="at"><i>at</i><par n="at__pr"/></e>
   		<e lm="in"><i>in</i><par n="at__pr"/></e>
   		<e lm="towards"><i>towards</i><par n="at__pr"/></e>
 
         <!-- Adverbs -->
 		<e lm="away"><i>away</i><par n="maybe__adv"/></e>
   		<e lm="quickly"><i>quickly</i><par n="maybe__adv"/></e>
-  		<e lm="in"><i>in</i><par n="maybe__adv"/></e>
 
         <!-- Verbs -->
   		<e lm="be"><par n="/be__vblex"/></e>
   		<e lm="come"><i>c</i><par n="bec/ome__vblex"/></e>
   		<e lm="run"><i>r</i><par n="r/un__vblex"/></e>
   		<e lm="run away"><i>r</i><par n="r/un__vblex"/><p><l><b/>away</l><r><g><b/>away</g></r></p></e>
+  		<e lm="see"><i>s</i><par n="s/ee__vblex"/></e>
   		<e lm="sleep"><i>sle</i><par n="ke/ep__vblex"/></e>
   		<e lm="start"><i>start</i><par n="accept__vblex"/></e>
 
         <!-- Adjectives -->
 		<e lm="big"><i>big</i><par n = "big/__adj" /></e>
-  		<e lm="fast"><i>fast</i><par n="long/__adj"/></e>
   		
         <!-- Nouns -->
 		<e lm="basket"><i>basket</i><par n="house__n"/></e>

@@ -55,42 +55,33 @@
  		<e lm="pe"><i>pe</i><par n="pe__part"/></e>
    		<e lm="pou"><i>pou</i><par n="pe__part"/></e>
    		<e lm="ti"><i>ti</i><par n="pe__part"/></e>
-               
    		
-   		<!-- [ A ] -->
-   		<e lm="anver"><i>anver</i><par n="an__pr"/></e>
-   		
-   		<!-- [ D ] -->
-   		<e lm="dan"><i>dan</i><par n="an__pr"/></e>
-   		<e lm="dormi"><i>dormi</i><par n="chanje__vblex"/></e>
-   		
-   		<!-- [ E ] -->
+   		<!-- Determiners -->
    		<e lm="enn"><i>enn</i><par n="enn__det"/></e>
    		
-   		<!-- [ G ] -->
+   		<!-- Prepositions -->
+   		<e lm="anver"><i>anver</i><par n="an__pr"/></e>
+   		<e lm="dan"><i>dan</i><par n="an__pr"/></e>
+   		
+   		<!-- Adverbs -->
+   		<e lm="vit-vit"><i>vit-vit</i><par n="isit__adv"/></e>
+   		
+   		<!-- Verbs -->
+   		<e lm="dormi"><i>dormi</i><par n="chanje__vblex"/></e>
    		<e lm="galupe"><i>galupe</i><par n="chanje__vblex"/></e>
-   		<e lm="gros" r="LR"><p><l>gros</l><r>gro</r></p><par n="gro__adj"/></e> <!-- Accept 'gros' as 'gro' -->
+   		<e lm="kumans"><i>kumans</i><par n="chanje__vblex"/></e>
+   		<e lm="sov"><i>sov</i><par n="chanje__vblex"/></e>
+   		<e lm="truve"><i>truve</i><par n="chanje__vblex"/></e>
+   		<e lm="vini"><i>vini</i><par n="chanje__vblex"/></e>
+   		
+   		<!-- Adjectives -->
+   		<e lm="gros" r="LR"><p><l>gros</l><r>gro</r></p><par n="gro__adj"/></e><!-- Accept 'gros' as 'gro' -->
    		<e lm="gro"><i>gro</i><par n="gro__adj"/></e>
    		
-   		<!-- [ K ] -->
-   		<e lm="kumans"><i>kumans</i><par n="liv__n"/></e>
-   		
-   		<!-- [ L ] -->
+   		<!-- Nouns -->
    		<e lm="lisyen"><i>lisyen</i><par n="liv__n"/></e>
-   		
-   		<!-- [ P ] -->
    		<e lm="panye"><i>panye</i><par n="liv__n"/></e>
-   		
-   		<!-- [ S ] -->
    		<e lm="sat"><i>sat</i><par n="liv__n"/></e>
-   		<e lm="sov"><i>sov</i><par n="chanje__vblex"/></e>
-   		
-   		<!-- [ T ] -->
-   		<e lm="truve"><i>truve</i><par n="chanje__vblex"/></e>
-   		
-   		<!-- [ V ] -->
-   		<e lm="vit-vit"><i>vit-vit</i><par n="isit__adv"/></e>
-   		<e lm="vini"><i>vini</i><par n="chanje__vblex"/></e>
    		
    </section>
   
