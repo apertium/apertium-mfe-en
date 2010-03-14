@@ -62,6 +62,7 @@
    		<!-- Prepositions -->
    		<e lm="anver"><i>anver</i><par n="an__pr"/></e>
    		<e lm="dan"><i>dan</i><par n="an__pr"/></e>
+   		<e lm="dans" r="LR"><p><l>dans</l><r>dan</r></p><par n="an__pr"/></e>
    		
    		<!-- Adverbs -->
    		<e lm="vit-vit"><i>vit-vit</i><par n="isit__adv"/></e>
