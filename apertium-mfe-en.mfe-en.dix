@@ -13,7 +13,6 @@
 		<sdef n="ind" />
 		<sdef n="n" /> 
 		<sdef n="ND" />
-		<sdef n="p1" />
 		<sdef n="pl" />
 		<sdef n="pr" />
 		<sdef n="sg" />
@@ -49,7 +48,7 @@
    		<e><p><l>galupe<s n="vblex"/></l><r>run<s n="vblex"/></r></p></e>
    		<e><p><l>kumans<s n="vblex"/></l><r>start<s n="vblex"/></r></p></e>
    		<e><p><l>sov<s n="vblex"/></l><r>run<g><b/>away</g><s n="vblex"/></r></p></e>
-   		<e><p><l>truv<s n="vblex"/></l><r>see<s n="vblex"/></r></p></e>
+   		<e><p><l>truve<s n="vblex"/></l><r>see<s n="vblex"/></r></p></e>
    		<e><p><l>vini<s n="vblex"/></l><r>come<s n="vblex"/></r></p></e>
    		
    		<!-- Adjectives -->

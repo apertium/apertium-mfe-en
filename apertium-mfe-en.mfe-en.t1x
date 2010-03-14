@@ -13,25 +13,29 @@
       <cat-item tags="np.al.*"/>
     </def-cat>
     
-    <def-cat n="det">
+    <def-cat n="det"><!-- adding a category for determiners -->
       <cat-item tags="det"/>
       <cat-item tags="det.*"/>
     </def-cat>
     
-    <def-cat n="adj">
+    <def-cat n="adj"><!-- adding a category for adjectives -->
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
       <cat-item tags="adj.sint"/>
       <cat-item tags="adj.sint.*"/>
     </def-cat>
     
-    <def-cat n="prep">
+    <def-cat n="prep"><!-- adding a category for preposition -->
       <cat-item tags="pr"/>
       <cat-item tags="pr.*"/>
     </def-cat>
     
-    <def-cat n="pr">
+    <def-cat n="pr"><!-- adding a category for preposition -->
       <cat-item tags="pr"/>
+    </def-cat>
+    
+    <def-cat n="vrb"><!-- adding a category for verbs -->
+      <cat-item tags="vblex.*"/>
     </def-cat>
     
   </section-def-cats><!-- end of categories definition -->
@@ -73,87 +77,39 @@
       <attr-item tags="pr"/>
     </def-attr>
     
+    <def-attr n="temps"><!-- defining the attribute: temps (attribute tense) -->
+      <attr-item tags="inf"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="pri"/>
+      <attr-item tags="past"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="pprs"/>
+      <attr-item tags="subs"/>
+    </def-attr>
+    
+    <def-attr n="pers"><!-- defining the attribute: pers (attribute person) -->
+      <attr-item tags="p1"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+    
+    <def-attr n="a_verb"><!-- defining the attribute: a_verb (attribute verb) -->
+      <attr-item tags="vblex"/>
+    </def-attr>
+    
+    
+    
   </section-def-attrs><!-- end of attributes definition -->
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+ 
   <section-def-vars><!-- defining global variables: store or transfer attributes between rules -->
     
     <def-var n="number"/>
-    <def-var n="caseFirstWord"/>
-    <def-var n="EOS" v="true"/>
-    <def-var n="determiner"/>
     
-  </section-def-vars><!-- end global variables definition -->
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
- 
-  <section-def-lists>  
-    <def-list n="en_majuscules">
-      <list-item v="Monday"/>
-      <list-item v="Tuesday"/>
-      <list-item v="Wednesday"/>
-      <list-item v="Thursday"/>
-      <list-item v="Friday"/>
-      <list-item v="Saturday"/>
-      <list-item v="Sunday"/>
-      </def-list>
-    </section-def-lists>
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  <section-def-macros>
-    <def-macro n="firstWord" npar="1">
-      <choose>
-        <when>
-          <test>
-            <equal> 
-              <var n="EOS"/>
-              <lit v="true"/>
-            </equal> 
-          </test>
-          <choose>
-            <when>
-              <test>
-                <and>
-                  <equal>
-                    <clip pos="1" side="sl" part="a_np_acr"/>
-                    <lit v=""/>
-                  </equal>
-                  <not>
-                    <in>
-                      <clip pos="1" side="tl" part="lem"/>
-                      <list n="en_majuscules"/>
-                    </in>
-                  </not>
-                </and>
-              </test>
-              <modify-case>
-                <clip pos="1" side="tl" part="lem"/>
-                <lit v="aa"/>
-              </modify-case>
-            </when>
-          </choose>
-          <let>
-            <var n="caseFirstWord"/>
-            <lit v="Aa"/>
-          </let>
-        </when>
-        <otherwise> 
-          <let>
-            <var n="caseFirstWord"/>
-            <lit v="aa"/>
-          </let>
-        </otherwise>
-      </choose>
-      <let>
-        <var n="EOS"/>
-        <lit v="false"/>
-      </let>
-    </def-macro>
-    
-  </section-def-macros>
-  
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+  </section-def-vars><!-- end global variables definition -->  
   
   <section-rules>
     
-    <rule><!-- defining a rule -->
+    <rule><!-- defining a rule nom -->
       <pattern>
         <pattern-item n="nom"/>
       </pattern>
@@ -168,65 +124,17 @@
       </action>
     </rule><!-- end of rule-definition -->
     
-
-    
-    <rule comment="REGLA: DET NOM ADJ">
+    <rule>
       <pattern>
-        <pattern-item n="det"/>
-        <pattern-item n="nom"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="vrb"/> <!-- defining a rule vrb -->
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
-          <chunk name="det_adj_nom" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="nbr"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_det"/>
-              <clip pos="1" side="tl" part="nbr"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-              <clip pos="3" side="tl" part="lemh"/>
-              <clip pos="3" side="tl" part="a_adj"/>
-              <clip pos="3" side="tl" part="lemq"/>
-            </lu>
-            <b pos="2"/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="nbr" link-to="2"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-    
-    <rule comment="REGLA: PR">
-      <pattern>
-        <pattern-item n="pr"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
-        <out>
-          <chunk name="pr">
-            <tags>
-              <tag><lit-tag v="PR"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="temps"/>
+          </lu>
         </out>
       </action>
     </rule>
