@@ -30,11 +30,16 @@
       <cat-item tags="pr.*"/>
     </def-cat>
     
+    <def-cat n="part">
+      <cat-item tags="part"/>
+    </def-cat>
+     
     <def-cat n="pr"><!-- adding a category for preposition -->
       <cat-item tags="pr"/>
     </def-cat>
     
     <def-cat n="vrb"><!-- adding a category for verbs -->
+      <cat-item tags="vblex"/>
       <cat-item tags="vblex.*"/>
     </def-cat>
     
@@ -45,6 +50,7 @@
     <def-attr n="nbr"><!-- defining attribute: nbr (number), either singular (sg) or plural (pl) -->
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
+      <attr-item tags="ND"/>
     </def-attr>
        
     <def-attr n="a_nom"><!-- defining the attribute: a_nom (attribute noun) -->
@@ -80,16 +86,14 @@
     <def-attr n="temps"><!-- defining the attribute: temps (attribute tense) -->
       <attr-item tags="inf"/>
       <attr-item tags="pres"/>
-      <attr-item tags="pri"/>
       <attr-item tags="past"/>
       <attr-item tags="pp"/>
       <attr-item tags="ger"/>
-      <attr-item tags="pprs"/>
-      <attr-item tags="subs"/>
     </def-attr>
     
     <def-attr n="pers"><!-- defining the attribute: pers (attribute person) -->
       <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
       <attr-item tags="p3"/>
     </def-attr>
     
@@ -104,9 +108,65 @@
   <section-def-vars><!-- defining global variables: store or transfer attributes between rules -->
     
     <def-var n="number"/>
+    <def-var n="cur_support_verb"/>
+    <def-var n="cur_verb_temps"/>
     
   </section-def-vars><!-- end global variables definition -->  
-  
+
+  <section-def-macros>
+    <def-macro n="set_cur_noun_number1" npar="1">
+      <let>  <!-- For the moment default to 'sg' -->
+        <clip pos="1" side="tl" part="nbr"/> 
+        <lit-tag v="sg"/>
+      </let> 
+    </def-macro>
+
+    <def-macro n="set_cur_verb_temps1" npar="1">
+      <let> <!-- Reset 'cur_verb_temps' variable -->
+        <var n="cur_verb_temps"/>
+        <lit v=""/>
+      </let>
+      <let> 
+        <var n="cur_support_verb"/>
+        <lit v=""/>
+      </let>
+      <choose>
+        <when>
+          <test> <!-- When the lemma of the particle is 'pe' -->
+            <equal caseless="yes">
+              <clip pos="1" side="sl" part="lem"/>
+              <lit v="pe"/>
+            </equal>
+          </test>
+          <let> <!-- Set the current verb tense to 'pres' -->
+            <var n="cur_verb_temps"/>
+            <lit-tag v="pres"/>
+          </let>
+        </when>
+        <when>
+          <test> 
+            <equal caseless="yes">
+              <clip pos="1" side="sl" part="lem"/>
+              <lit v="pou"/>
+            </equal>
+          </test>
+          <let> 
+            <var n="cur_support_verb"/>
+            <concat>
+              <lit v="^will"/>
+              <lit-tag v="vaux.inf"/>
+              <lit v="$ "/>
+            </concat>
+          </let>
+          <let> 
+            <var n="cur_verb_temps"/>
+            <lit-tag v="inf"/>
+          </let>
+        </when>
+      </choose>
+    </def-macro>  
+  </section-def-macros>
+
   <section-rules>
     
     <rule><!-- defining a rule nom -->
@@ -114,6 +174,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="set_cur_noun_number1">
+          <with-param pos="1"/>
+        </call-macro>
         <out>
           <lu><!-- lexical unit -->
             <clip pos="1" side="tl" part="lemh"/>
@@ -141,6 +204,27 @@
       </action>
     </rule>
     
+    <rule comment="particle + verb">
+      <pattern>
+        <pattern-item n="part"/> 
+        <pattern-item n="vrb"/> 
+      </pattern>
+      <action>
+        <call-macro n="set_cur_verb_temps1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <var n="cur_support_verb"/>
+          <lu>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="tl" part="a_verb"/>
+            <var n="cur_verb_temps"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+     
   </section-rules>
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
   

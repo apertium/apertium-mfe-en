@@ -4,4 +4,6 @@
 /apertium-mfe-en.mfe-en.dix -text
 /apertium-mfe-en.mfe-en.t1x -text
 /apertium-mfe-en.mfe.dix -text
+/apertium-mfe-en.post-en.dix -text
 /mfe-en.prob -text
+/modes.xml -text

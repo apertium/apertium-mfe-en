@@ -2,12 +2,13 @@
 
 <dictionary>
 	
-	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzž</alphabet>
+	<alphabet>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</alphabet>
 	
 	<sdefs>
 		
 		<sdef n="adj" /> 
 		<sdef n="adv" />
+		<sdef n="vaux" />
 		<sdef n="comp" /> 
 		<sdef n="det" />
 		<sdef n="def" />
@@ -39,6 +40,9 @@
 			<e r="RL"><p><l><a/>a</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
 			<e r="LR"><p><l>a</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
 			<e r="LR"><p><l>an</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+		</pardef>
+		<pardef n="will__vaux">
+			<e><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 		</pardef>
 		
 		<pardef n="/be__vblex">
@@ -154,9 +158,12 @@
         <!-- Adverbs -->
 		<e lm="away"><i>away</i><par n="maybe__adv"/></e>
   		<e lm="quickly"><i>quickly</i><par n="maybe__adv"/></e>
+  		<e lm="tomorrow"><i>tomorrow</i><par n="maybe__adv"/></e>
+  		<e lm="yesterday"><i>yesterday</i><par n="maybe__adv"/></e>
 
         <!-- Verbs -->
   		<e lm="be"><par n="/be__vblex"/></e>
+  		<e lm="will"><i>will</i><par n="will__vaux"/></e>
   		<e lm="come"><i>c</i><par n="bec/ome__vblex"/></e>
   		<e lm="run"><i>r</i><par n="r/un__vblex"/></e>
   		<e lm="run away"><i>r</i><par n="r/un__vblex"/><p><l><b/>away</l><r><g><b/>away</g></r></p></e>

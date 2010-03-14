@@ -65,6 +65,8 @@
    		
    		<!-- Adverbs -->
    		<e lm="vit-vit"><i>vit-vit</i><par n="isit__adv"/></e>
+   		<e lm="dime"><i>dime</i><par n="isit__adv"/></e>
+   		<e lm="yer"><i>yer</i><par n="isit__adv"/></e>
    		
    		<!-- Verbs -->
    		<e lm="dormi"><i>dormi</i><par n="chanje__vblex"/></e>

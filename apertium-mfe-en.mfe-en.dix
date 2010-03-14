@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <dictionary>
-	
-	<alphabet>ABCČĆDDžĐEFGHIJKLLjMNNjOPRSŠTUVZŽabcčćddžđefghijklljmnnjoprsštuvzž</alphabet>
-   	
+	<alphabet/>
 	<sdefs>
-		
 		<sdef n="adj" /> 
 		<sdef n="adv" />
 		<sdef n="comp" /> 
@@ -13,25 +9,23 @@
 		<sdef n="ind" />
 		<sdef n="n" /> 
 		<sdef n="ND" />
+		<sdef n="part" />
 		<sdef n="pl" />
 		<sdef n="pr" />
 		<sdef n="sg" />
 		<sdef n="sint" /> 
 		<sdef n="vblex" />
-	
 	</sdefs>
-
 	<pardefs>
-	  
 		<pardef n="ND">
 			<e r="RL"><p><l></l><r><s n="sg"/></r></p></e>
 			<e r="RL"><p><l></l><r><s n="pl"/></r></p></e>
 			<e r="LR"><p><l></l><r><s n="ND"/></r></p></e>
 		</pardef>
-	
 	</pardefs>
-
    	<section id="main" type="standard">
+                <!-- Particles -->
+   		<e><p><l>pe<s n="part"/></l><r></r></p></e>
    		
    		<!-- Determiners -->
    		<e><p><l>enn<s n="det"/><s n="ind"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
@@ -42,6 +36,8 @@
    		
    		<!-- Adverbs -->
    		<e><p><l>vit-vit<s n="adv"/></l><r>quickly<s n="adv"/></r></p></e>
+   		<e><p><l>yer<s n="adv"/></l><r>yesterday<s n="adv"/></r></p></e>
+   		<e><p><l>dime<s n="adv"/></l><r>tomorrow<s n="adv"/></r></p></e>
    		
    		<!-- Verbs -->
    		<e><p><l>dormi<s n="vblex"/></l><r>sleep<s n="vblex"/></r></p></e>
@@ -61,6 +57,5 @@
    		<e><p><l>sat<s n="n"/></l><r>cat<s n="n"/></r></p><par n="ND"/></e>
    		
    	</section>
-	
 </dictionary>
 
