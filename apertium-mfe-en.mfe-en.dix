@@ -50,11 +50,15 @@
    		<!-- Adjectives -->
    		<e><p><l>gro<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
    		<e><p><l>gros<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e><!-- Accept 'gros' as 'gro' -->
+		<e><p><l>ruz<s n="adj"/></l><r>red<s n="adj"/></r></p></e> <!-- added -->
    		
    		<!-- Nouns -->
    		<e><p><l>lisyen<s n="n"/></l><r>dog<s n="n"/></r></p><par n="ND"/></e>
    		<e><p><l>panye<s n="n"/></l><r>basket<s n="n"/></r></p><par n="ND"/></e>
    		<e><p><l>sat<s n="n"/></l><r>cat<s n="n"/></r></p><par n="ND"/></e>
+		<e><p><l>lakaz<s n="n"/></l><r>house<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
+		<e><p><l>fler<s n="n"/></l><r>flower<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
+		
    		
    	</section>
 </dictionary>

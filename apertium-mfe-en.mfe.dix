@@ -38,6 +38,10 @@
 		<pardef n ="gro__adj">
 			<e><p><l></l> <r><s n="adj"/></r></p></e>
 		</pardef>
+
+		<pardef n ="color__adj">
+			<e><p><l></l> <r><s n="adj"/></r></p></e>
+		</pardef>
 		
 		<pardef n="isit__adv">
 			<e><p><l></l><r><s n="adv"/></r></p></e>
@@ -80,11 +84,15 @@
    		<!-- Adjectives -->
    		<e lm="gros" r="LR"><p><l>gros</l><r>gro</r></p><par n="gro__adj"/></e><!-- Accept 'gros' as 'gro' -->
    		<e lm="gro"><i>gro</i><par n="gro__adj"/></e>
+		<e lm="ruz"><i>ruz</i><par n="color__adj"/></e> <!-- added -->
    		
    		<!-- Nouns -->
    		<e lm="lisyen"><i>lisyen</i><par n="liv__n"/></e>
    		<e lm="panye"><i>panye</i><par n="liv__n"/></e>
    		<e lm="sat"><i>sat</i><par n="liv__n"/></e>
+		<e lm="lakaz"><i>lakaz</i><par n="liv__n"/></e> <!-- added -->
+		<e lm="fler"><i>fler</i><par n="liv__n"/></e> <!-- added -->
+		
    		
    </section>
   

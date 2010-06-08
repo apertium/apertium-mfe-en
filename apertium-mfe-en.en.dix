@@ -90,6 +90,10 @@
 			<e><p><l>ger</l><r><s n = "adj"/><s n = "sint"/><s n = "comp"/></r></p></e>
 			<e><p><l>gest</l><r><s n = "adj"/><s n = "sint"/><s n = "sup"/></r></p></e>
 		</pardef>
+
+		<pardef n="color__adj">
+			<e><p><l></l><r><s n="adj"/></r></p></e>
+		</pardef>
 		
 		<pardef n="house__n">
 			<e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
@@ -173,11 +177,15 @@
 
         <!-- Adjectives -->
 		<e lm="big"><i>big</i><par n = "big/__adj" /></e>
+		<e lm="red"><i>red</i><par n="color__adj"/></e> <!-- added -->
   		
         <!-- Nouns -->
 		<e lm="basket"><i>basket</i><par n="house__n"/></e>
   		<e lm="cat"><i>cat</i><par n="house__n"/></e>
   		<e lm="dog"><i>dog</i><par n="house__n"/></e>
+		<e lm="house"><i>house</i><par n="house__n"/></e> <!-- added -->
+		<e lm="flower"><i>flower</i><par n="house__n"/></e> <!-- added -->
+		
   		
   	</section>
 	
