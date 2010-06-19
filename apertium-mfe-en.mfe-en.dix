@@ -38,6 +38,7 @@
    		<e><p><l>vit-vit<s n="adv"/></l><r>quickly<s n="adv"/></r></p></e>
    		<e><p><l>yer<s n="adv"/></l><r>yesterday<s n="adv"/></r></p></e>
    		<e><p><l>dime<s n="adv"/></l><r>tomorrow<s n="adv"/></r></p></e>
+   		<e><p><l>dusman-dusman<s n="adv"/></l><r>slowly<s n="adv"/></r></p></e> <!-- added -->
    		
    		<!-- Verbs -->
    		<e><p><l>dormi<s n="vblex"/></l><r>sleep<s n="vblex"/></r></p></e>
@@ -46,11 +47,18 @@
    		<e><p><l>sov<s n="vblex"/></l><r>run<g><b/>away</g><s n="vblex"/></r></p></e>
    		<e><p><l>truve<s n="vblex"/></l><r>see<s n="vblex"/></r></p></e>
    		<e><p><l>vini<s n="vblex"/></l><r>come<s n="vblex"/></r></p></e>
+		<e><p><l>briye<s n="vblex"/></l><r>shine<s n="vblex"/></r></p></e> <!-- added -->
+		<e><p><l>uver<s n="vblex"/></l><r>open<s n="vblex"/></r></p></e> <!-- added -->
+		<e><p><l>trape<s n="vblex"/></l><r>catch<s n="vblex"/></r></p></e> <!-- added -->
    		
    		<!-- Adjectives -->
    		<e><p><l>gro<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
    		<e><p><l>gros<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e><!-- Accept 'gros' as 'gro' -->
 		<e><p><l>ruz<s n="adj"/></l><r>red<s n="adj"/></r></p></e> <!-- added -->
+		<e><p><l>nwar<s n="adj"/></l><r>black<s n="adj"/></r></p></e> <!-- added -->
+		<e><p><l>nuvo<s n="adj"/></l><r>new<s n="adj"/><s n="sint"/></r></p></e> <!-- added -->
+		<e><p><l>vye<s n="adj"/></l><r>old<s n="adj"/><s n="sint"/></r></p></e> <!-- added -->
+		<e><p><l>instab<s n="adj"/></l><r>unstable<s n="adj"/></r></p></e> <!-- added -->
    		
    		<!-- Nouns -->
    		<e><p><l>lisyen<s n="n"/></l><r>dog<s n="n"/></r></p><par n="ND"/></e>
@@ -58,8 +66,12 @@
    		<e><p><l>sat<s n="n"/></l><r>cat<s n="n"/></r></p><par n="ND"/></e>
 		<e><p><l>lakaz<s n="n"/></l><r>house<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
 		<e><p><l>fler<s n="n"/></l><r>flower<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
-		
-   		
+		<e><p><l>soley<s n="n"/></l><r>sun<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
+		<e><p><l>laport<s n="n"/></l><r>door<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
+		<e><p><l>bato<s n="n"/></l><r>boat<s n="n"/></r></p><par n="ND"/></e> <!-- added -->		
+		<e><p><l>loto<s n="n"/></l><r>car<s n="n"/></r></p><par n="ND"/></e> <!-- added -->	
+		<e><p><l>sato<s n="n"/></l><r>castle<s n="n"/></r></p><par n="ND"/></e> <!-- added -->
+		<e><p><l>crayon<s n="n"/></l><r>pencil<s n="n"/></r></p><par n="ND"/></e> <!-- added -->   		
    	</section>
 </dictionary>
 

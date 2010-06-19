@@ -233,12 +233,6 @@
        		</pattern>
        		<action>
          		<out>
-<!--
-            		<chunk name="det_adj_nom" >
-             		<tags>
-                		<tag><clip pos="1" side="tl" part="nbr"/></tag>
-              		</tags>
--->
               		<lu>
                 		<clip pos="1" side="tl" part="lemh"/>
                 		<clip pos="1" side="tl" part="a_det"/>
@@ -256,10 +250,8 @@
                 		<clip pos="2" side="tl" part="lemh"/>
                 		<clip pos="2" side="tl" part="a_nom"/>
                 		<clip pos="2" side="tl" part="nbr"/>
-                		<!--<clip pos="2" side="tl" part="nbr" link-to="2"/>-->
                 		<clip pos="2" side="tl" part="lemq"/>
               		</lu>
-<!--            		</chunk>-->
          		</out>
        		</action>
    	</rule>

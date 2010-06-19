@@ -70,6 +70,17 @@
 			<e><p><l>ing</l><r><s n="vblex"/><s n="subs"/></r></p></e>
 		</pardef>
 		
+		<pardef n="accept2__vblex">
+			<e><p><l></l><r><s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l></l><r><s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>es</l><r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ed</l><r><s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>ed</l><r><s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ing</l><r><s n="vblex"/><s n="ger"/></r></p></e>
+			<e><p><l>ing</l><r><s n="vblex"/><s n="pprs"/></r></p></e>
+			<e><p><l>ing</l><r><s n="vblex"/><s n="subs"/></r></p></e>
+		</pardef>
+
 		<pardef n="at__pr">
 			<e><p><l></l><r><s n="pr"/></r></p></e>
 		</pardef>
@@ -108,6 +119,17 @@
 			<e><p><l>eping</l><r>ep<s n="vblex"/><s n="ger"/></r></p></e>
 			<e><p><l>eping</l><r>ep<s n="vblex"/><s n="pprs"/></r></p></e>
 			<e><p><l>eping</l><r>ep<s n="vblex"/><s n="subs"/></r></p></e>
+		</pardef>
+
+		<pardef n="liv/e__vblex">
+			<e><p><l>e</l><r>e<s n="vblex"/><s n="inf"/></r></p></e>
+			<e><p><l>e</l><r>e<s n="vblex"/><s n="pres"/></r></p></e>
+			<e><p><l>es</l><r>e<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+			<e><p><l>ed</l><r>e<s n="vblex"/><s n="past"/></r></p></e>
+			<e><p><l>ed</l><r>e<s n="vblex"/><s n="pp"/></r></p></e>
+			<e><p><l>ing</l><r>e<s n="vblex"/><s n="ger"/></r></p></e>
+			<e><p><l>ing</l><r>e<s n="vblex"/><s n="pprs"/></r></p></e>
+			<e><p><l>ing</l><r>e<s n="vblex"/><s n="subs"/></r></p></e>
 		</pardef>
 		
 		<pardef n="long/__adj">
@@ -164,6 +186,7 @@
   		<e lm="quickly"><i>quickly</i><par n="maybe__adv"/></e>
   		<e lm="tomorrow"><i>tomorrow</i><par n="maybe__adv"/></e>
   		<e lm="yesterday"><i>yesterday</i><par n="maybe__adv"/></e>
+		<e lm="slowly"><i>slowly</i><par n="maybe__adv"/></e>
 
         <!-- Verbs -->
   		<e lm="be"><par n="/be__vblex"/></e>
@@ -174,10 +197,19 @@
   		<e lm="see"><i>s</i><par n="s/ee__vblex"/></e>
   		<e lm="sleep"><i>sle</i><par n="ke/ep__vblex"/></e>
   		<e lm="start"><i>start</i><par n="accept__vblex"/></e>
+		<e lm="shine"><i>shine</i><par n="liv/e__vblex"/></e> <!-- added -->
+		<e lm="open"><i>open</i><par n="accept__vblex"/></e> <!-- added -->
+		<e lm="catch"><i>open</i><par n="accept2__vblex"/></e> <!-- added -->
+
 
         <!-- Adjectives -->
 		<e lm="big"><i>big</i><par n = "big/__adj" /></e>
 		<e lm="red"><i>red</i><par n="color__adj"/></e> <!-- added -->
+		<e lm="black"><i>black</i><par n="color__adj"/></e> <!-- added -->
+		<e lm="new"><i>new</i><par n="long/__adj"/></e> <!-- added -->
+		<e lm="old"><i>old</i><par n="long/__adj"/></e> <!-- added -->
+		<e lm="unstable"><i>unstable</i><par n="color__adj"/></e> <!-- added -->
+		
   		
         <!-- Nouns -->
 		<e lm="basket"><i>basket</i><par n="house__n"/></e>
@@ -185,7 +217,12 @@
   		<e lm="dog"><i>dog</i><par n="house__n"/></e>
 		<e lm="house"><i>house</i><par n="house__n"/></e> <!-- added -->
 		<e lm="flower"><i>flower</i><par n="house__n"/></e> <!-- added -->
-		
+		<e lm="sun"><i>sun</i><par n="house__n"/></e> <!-- added -->
+		<e lm="door"><i>door</i><par n="house__n"/></e> <!-- added -->
+		<e lm="boat"><i>boat</i><par n="house__n"/></e> <!-- added -->
+		<e lm="car"><i>car</i><par n="house__n"/></e> <!-- added -->
+		<e lm="castle"><i>castle</i><par n="house__n"/></e> <!-- added -->
+		<e lm="pencil"><i>pencil</i><par n="house__n"/></e> <!-- added -->	
   		
   	</section>
 	
